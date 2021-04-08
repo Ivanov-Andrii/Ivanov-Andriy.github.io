@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.nav-button {
+    display: inline-block;
+    text-decoration: none;
+    padding: 8px 14px;
+    color: white;
+    background-color: tomato;
+    border: 1px solid white;
+    border-radius: 5%;
+    margin: 10px 0 0 10px;
+    transition: all .5s ease-in;
+
+}
+
+.nav-button i {
+    padding-left: 1em;
+}
+
+.header {
+
+ background: url('../img/img-bg-header.jpg') no-repeat center;
+ background-size: cover;
+ color: white;
+ position: relative;
+
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+
+.header .container {
+    position: relative;
+    z-index: 1;
+    height: 100vh
+}
+
+.wrap-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrap-menu__logo {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    background: url('../img/sambo-logo.png') no-repeat center;
+    background-size: contain;
+    flex: 1 1 30%;
+}
+
+
+.wrap-menu__catalog {
+    flex: 1 1 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.wrap-menu__link {
+    display: inline-block;
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.wrap-menu__link:hover {
+    color: silver;
+    border-bottom: 2px solid silver;
+}
+
+.header__wrap {
+    display: grid;
+    place-items: center;
+    text-align: center;
+    padding-top: calc(100vh/2 - 100px);
+}
+
+h1 {
+    font-size: 60px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+
+.header__text {
+    font-size: 24px;
+    max-width: 70%;
+}
+
+section {
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+
+h2 {
+    font-size: 36px;
+    color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.about-us__text p{
+    padding: 10px;
+}
+
+.gallery__catalog {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.gallery__box {
+    height: 280px;
+    width: 280px;
+    background: url('../img/img-bg-header.jpg') no-repeat center;
+    background-size: cover;
+    border: 1px solid grey;
+    transition: all .2s ease-in;
+}
+
+.gallery__box:hover {
+    transform: scale(1.1);
+}
+
+
+.price {
+    margin-bottom: 20px;
+}
+
+.price__box {
+    transition: all .2s ease-in;
+}
+
+.price__box:nth-child(1),
+.price__box:nth-child(3) {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.price__box:nth-child(4) {
+    border-bottom: 1px solid grey;
+}
+
+/* .price__box:hover {
+
+} */
+
+.price__context {
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+.price__text {
+    font-size: 24px;
+
+}
+
+.price__price span {
+    color: red;
+    font-weight: 700;
+}
+
+.footer {
+    text-align: center;
+    padding: 20px;
+    background: url('../img/img-bg-header.jpg') no-repeat center;
+    background-size: cover;
+    position: relative;
+    color: white;
+}
+
+.footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .7);
+}
+
+.footer h2 {
+    color: white;
+    position: relative;
+    z-index: 1;
+}
+
+.contacts {
+    position: relative;
+    z-index: 1;
+}
+
+.contacts * {
+    padding-top: 5px;
+}
+
+
+.contacts a {
+    display: block;
+    text-decoration: none;
+    color: white;
+}
+
+.contacts a:hover {
+    cursor: pointer;
+    color: silver;
+}
